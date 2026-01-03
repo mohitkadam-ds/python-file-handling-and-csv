@@ -1,0 +1,9 @@
+# Create and write data into a CSV file
+import csv
+with open("students.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Name", "Age", "City"])
+    writer.writerow(["Mohit", "20", "Pune"])
+    writer.writerow(["Aditya", "18", "Jalna"])
+    writer.writerow(["Pratik", "20", "Jalgaon"])
+print("CSV file created successfully")
